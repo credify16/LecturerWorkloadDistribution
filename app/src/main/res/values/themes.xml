@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Credify" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color (Maroon) -->
+        <item name="colorPrimary">@color/utm_maroon</item>
+        <item name="colorPrimaryVariant">@color/maroon_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color (Gold) -->
+        <item name="colorSecondary">@color/utm_gold</item>
+        <item name="colorSecondaryVariant">@color/utm_gold</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar and Navigation bar color (UTM Maroon) -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Remove default blue/purple colors from Material Components -->
+        <item name="colorControlActivated">@color/utm_maroon</item>
+        <item name="colorControlHighlight">@color/utm_gold</item>
+    </style>
+</resources>

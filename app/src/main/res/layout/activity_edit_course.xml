@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/utm_maroon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/white"
+        app:title="Edit Course"
+        app:titleTextColor="@color/white" />
+
+    <!-- Scrollable Form Area -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/fragmentBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="19dp"
+        android:background="@drawable/bg_fragment_box"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewLogo"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Course Code -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Course Code">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCourseCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Course Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Course Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCourseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Method Spinner -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Method"
+                android:textColor="@color/utm_maroon"
+                android:layout_marginBottom="4dp"/>
+            <Spinner
+                android:id="@+id/spinnerMethod"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_fragment_box"
+                android:padding="8dp"/>
+
+            <!-- Weekly Hour -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Weekly Hour">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etWeeklyHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Credit Value -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Credit Value">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCreditHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Coordinator Spinner -->
+            <TextView
+                android:id="@+id/tvCoordinatorLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Coordinator"
+                android:textColor="@color/utm_maroon"
+                android:layout_marginBottom="4dp"/>
+            <Spinner
+                android:id="@+id/spinnerCoordinator"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_fragment_box"
+                android:padding="8dp"/>
+
+            <!-- Programme Spinner -->
+            <TextView
+                android:id="@+id/tvProgrammeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Programme"
+                android:textColor="@color/utm_maroon"
+                android:layout_marginBottom="4dp"/>
+            <Spinner
+                android:id="@+id/spinnerProgramme"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_fragment_box"
+                android:padding="8dp"/>
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/utm_maroon"
+                android:text="Update Course"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ProgressBar for loading states -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Footer Logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="70dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="-1dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewBottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/utm" />
+
+    <!-- Bottom Bar Area -->
+    <View
+        android:id="@+id/viewBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/utm_maroon"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

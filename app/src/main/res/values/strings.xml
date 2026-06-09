@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Credify</string>
+    <string name="welcome_back">Welcome Back,</string>
+    <string name="admin_name">Administrator</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="lecturers">Lecturers</string>
+    <string name="subjects">Subjects</string>
+    <string name="assignments">Assignments</string>
+    <string name="reports">Reports</string>
+    <string name="total_lecturers">Total Lecturers</string>
+    <string name="active_subjects">Active Subjects</string>
+    <string name="workload_summary">Workload Summary</string>
+    <string name="add_new">Add New</string>
+    
+    <!-- Login Strings -->
+    <string name="login_title">Log In</string>
+    <string name="login_subtitle">Workload Distribution System</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="role_description">Access is restricted based on your assigned role (Admin, Coordinator, or Lecturer).</string>
+
+    <!-- Create Lecturer -->
+    <string name="create_lecturer_title">Lecturer Profile</string>
+    <string name="lecturer_id_hint">Lecturer ID</string>
+    <string name="lecturer_name_hint">Full Name</string>
+    <string name="lecturer_title_hint">Academic Title (e.g., Dr., Prof.)</string>
+    <string name="save_button">Save Record</string>
+
+    <!-- Create Section -->
+    <string name="create_section_title">Section Details</string>
+    <string name="section_id_hint">Section ID</string>
+    <string name="section_number_hint">Section Number</string>
+    <string name="year_hint">Academic Year</string>
+    <string name="student_amount_hint">Student Count</string>
+
+    <!-- Create Subject -->
+    <string name="create_subject_title">Course Details</string>
+    <string name="subject_id_hint">Course Code / ID</string>
+    <string name="subject_name_hint">Course Name</string>
+    <string name="credit_value_hint">Credit Value</string>
+    <string name="load_value_hint">Workload Value</string>
+
+    <!-- Registration Strings -->
+    <string name="register_title">Create Account</string>
+    <string name="role_hint">Select Your Role</string>
+    <string name="university_name_hint">University Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+
+    <!-- Lecturer Dashboard -->
+    <string name="open_menu">Open Navigation Menu</string>
+    <string name="welcome_lecturer">Welcome, Lecturer</string>
+    <string name="logout">Logout</string>
+    <string name="filter_label">FILTER :</string>
+    <string name="total_btsa">Total BTSA</string>
+    <string name="default_stat_value">0.0</string>
+    <string name="total_credits">Total Credits</string>
+    <string name="default_stat_int">0</string>
+    <string name="my_assigned_courses">My Assigned Courses</string>
+    <string name="my_profile">My Profile</string>
+
+    <string-array name="campus_options">
+        <item>KL</item>
+        <item>JB</item>
+    </string-array>
+</resources>

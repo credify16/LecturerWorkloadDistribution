@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="Home" />
+
+    <!-- Quick Add Section -->
+    <item android:title="Add">
+        <menu>
+            <item
+                android:id="@+id/nav_add_assignment"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Add Assignment" />
+
+            <item
+                android:id="@+id/nav_add_course"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Add Course" />
+            <item
+                android:id="@+id/nav_add_lecturer"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Add Lecturer" />
+
+            <item
+                android:id="@+id/nav_add_section"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Add Section" />
+        </menu>
+    </item>
+
+    <!-- Management Section -->
+    <item android:title="Management">
+        <menu>
+            <item
+                android:id="@+id/nav_manage_assignments"
+                android:icon="@android:drawable/ic_menu_view"
+                android:title="View Assignments" />
+
+            <item
+                android:id="@+id/nav_my_courses"
+                android:icon="@android:drawable/ic_menu_view"
+                android:title="View Courses" />
+            <item
+                android:id="@+id/nav_my_lecturers"
+                android:icon="@android:drawable/ic_menu_view"
+                android:title="View Lecturers" />
+            <item
+                android:id="@+id/nav_manage_sections"
+                android:icon="@android:drawable/ic_menu_view"
+                android:title="View Sections" />
+            <item
+                android:id="@+id/nav_manage_workload"
+                android:icon="@android:drawable/ic_menu_view"
+                android:title="View Workload" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Logout" />
+
+</menu>

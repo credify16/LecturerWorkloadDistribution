@@ -1,4 +1,4 @@
-# Lecturer Workload Distributer (Credify)
+# Lecturer Workload Distribution (Credify)
 
 **Credify** is a comprehensive Android application designed to streamline the management of lecturer workloads, course assignments, and academic data. Built with a robust backend powered by Supabase, it provides a seamless experience for Administrators, Coordinators, and Lecturers to monitor and distribute teaching loads efficiently.
 

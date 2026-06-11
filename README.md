@@ -47,7 +47,7 @@ Since this app is not on the Google Play Store, you must allow your device to in
 ---
 
 ## 🔐 Test Credentials
-Once you have run the database setup script, you can use the following account to log in as an Admin:
+You can use the following account to log in as an Admin:
 
 - **Email:** `admin@credify.com`
 - **Password:** `credify16`

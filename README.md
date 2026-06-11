@@ -6,7 +6,7 @@
 - **Ilyas Akbar Khan**
 - **Ahmad Khaizuran**
 - **Alyssa Natalya**
-- **Hui Lee**
+- **Chee Hui Li**
 
 ## ✨ Features
 - **Role-Based Access:** Distinct interfaces and permissions for Admins, Coordinators, and Lecturers.
